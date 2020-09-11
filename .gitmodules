@@ -25,7 +25,7 @@
 [submodule "CICE6"]
 	path = CICE-interface/CICE
 	url = https://github.com/benjamin-cash/CICE
-	branch = develop
+	branch = stampede2_port/CICE6fix
 [submodule "MOM6-interface/mkmf"]
 	path = MOM6-interface/mkmf
 	url = https://github.com/NOAA-EMC/mkmf
