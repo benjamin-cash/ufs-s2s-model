@@ -1,0 +1,47 @@
+#%Module######################################################################
+ ##
+ ##    NEMS FV3 Prerequisites: Cheyenne/Intel
+ 
+proc ModulesHelp {} {
+   puts stderr "\tcit - loads modules required for building and running FV3 under CMEPS on Stampede2/Intel"
+ }
+ 
+module-whatis "loads CMEPS FV3 prerequisites for Stampede2/Intel"
+
+module purge
+
+module purge
+module load libfabric/1.7.0
+module load git/2.24.1
+module load autotools/1.1
+module load xalt/2.8
+module load TACC
+module load python3/3.7.0
+module load intel/18.0.2
+module load cmake/3.16.1
+module load impi/18.0.2
+
+setenv INSTALL_PREFIX /work/02441/bcash/stampede2/NCEPLIBS-develop/src
+
+module use -a /work/02441/bcash/stampede2/NCEPLIBS-develop/src/src/NCEPLIBS-external/tmplModulefiles
+module load netcdf
+module load esmf
+module load wgrib2
+module load libpng
+
+module use -a /work/02441/bcash/stampede2/NCEPLIBS-develop/src/modules
+module load bacio
+module load nemsio
+module load sp
+module load w3emc
+module load w3nco
+module load nceppost
+module load sigio
+module load g2
+module load g2tmpl
+module load ip
+module load crtm
+setenv CMAKE_C_COMPILER icc
+setenv CMAKE_CXX_COMPILER mpicxx
+setenv CMAKE_Fortran_COMPILER ifort
+setenv CMAKE_Platform stampede.intel
