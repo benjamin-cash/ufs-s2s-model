@@ -29,8 +29,8 @@
 [submodule "MOM6-interface/mkmf"]
 	path = MOM6-interface/mkmf
 	url = https://github.com/benjamin-cash/mkmf
-	branch = stampede2_port/mkmfv2
+	branch = develop
 [submodule "MOM6-interface/MOM6"]
 	path = MOM6-interface/MOM6
 	url = https://github.com/benjamin-cash/MOM6
-	branch = stampede2_port/MOM6v2
+	branch = develop
