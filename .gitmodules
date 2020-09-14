@@ -32,5 +32,5 @@
 	branch = s2s_p5_stampede
 [submodule "MOM6-interface/MOM6"]
 	path = MOM6-interface/MOM6
-	url = https://github.com/benjamin-cash/MOM6
-	branch = s2s_p5_stampede
+	url = https://github.com/NOAA-EMC/MOM6
+	branch = emc/develop
